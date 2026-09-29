@@ -1,0 +1,7 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ColdDrop</title><link rel="stylesheet" href="style.css"></head><body>
+<header><h1>❄️ ColdDrop</h1><p>Frozen & Raw Food Market</p><nav><a href="index.html" class="active">🛒 Buy</a><a href="seller.html">🏪 Sell</a><a href="admin.html">🛵 Orders</a></nav></header>
+<div class="search-box"><input id="search" placeholder="Search chicken, fish..." oninput="filterProducts()"><select id="catFilter" onchange="filterProducts()"><option value="">All</option><option>Chicken</option><option>Fish</option><option>Turkey</option><option>Raw</option></select></div>
+<div id="products" class="grid"></div>
+<div id="cartBtn" onclick="openCart()">🛒 Cart (<span id="cartCount">0</span>) - ₦<span id="cartTotal">0</span></div>
+<div id="cartModal" class="modal"><div class="modal-content"><span onclick="closeCart()" class="close">&times;</span><h2>Your Basket</h2><div id="cartItems"></div><input id="custName" placeholder="Name"><input id="custPhone" placeholder="WhatsApp Number"><input id="custAddr" placeholder="Address e.g. Yaba"><button onclick="placeOrder()" class="btn-order">Place Order - Pay on Delivery</button></div></div>
+<script src="app.js"></script></body></html>
